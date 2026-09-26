@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaryan Jagga — Developer &amp; Builder</title>
+    <meta name="description" content="Aaryan Jagga — Full-Stack Developer, SaaS Builder &amp; Digital Product Architect. Building digital products that turn ideas into reality." />
+    <meta name="author" content="Aaryan Jagga" />
+    <meta name="keywords" content="Aaryan Jagga, Full Stack Developer, React, Node.js, Express, SQLite, SaaS, Software Engineer, Code With Aaryan" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Aaryan Jagga — Developer &amp; Builder" />
+    <meta property="og:description" content="Full-Stack Developer, SaaS Builder &amp; Digital Product Architect. Building digital products that turn ideas into reality." />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Aaryan Jagga — Developer &amp; Builder" />
+    <meta property="twitter:description" content="Full-Stack Developer, SaaS Builder &amp; Digital Product Architect." />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#090a0f" />
+
+    <!-- Instant Theme Synchronization (Prevents Theme Flash) -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('portfolio_theme');
+          var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+          var activeTheme = saved || (prefersLight ? 'light' : 'dark');
+          if (activeTheme === 'light') {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+            var meta = document.querySelector('meta[name="theme-color"]');
+            if (meta) meta.setAttribute('content', '#f8fafc');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
